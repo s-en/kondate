@@ -30,7 +30,7 @@ body > * {
 }
 header-layout {
   grid-area: title;
-  border-bottom: 1.5px solid #ccc;
+  border-bottom: 1.0px solid #ccc;
 }
 main {
   grid-area: main;
@@ -43,7 +43,7 @@ footer-layout {
   grid-area: footer;
   position: relative;
   text-align: center;
-  border-top: 1.5px solid #ccc;
+  border-top: 1.0px solid #ccc;
 }
 @media screen and (max-width: 767px) {
   .wrapper {
