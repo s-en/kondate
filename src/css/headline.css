@@ -1,0 +1,27 @@
+.card {
+  overflow: hidden;
+  cursor: pointer;
+  height: 200px;
+  margin: 8px;
+  padding: 6px;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 0.8rem;
+}
+.card:hover {
+  background: #f9f9ff;
+}
+.title {
+  font-size: 2em;
+}
+h3, h4, h5 {
+  margin: 4px 0px;
+  font-size: 1.0rem;
+}
+img {
+  width: auto;
+  height: 120px;
+}
+p, ul {
+  margin: 2px 0;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "kondate",
+  "version": "0.0.1",
+  "description": "recipe style blog site generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./src",
+    "deploy": "node deploy.js"
+  },
+  "author": "sen@nemusoft.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@azure/storage-blob": "^10.4.0",
+    "dotenv": "^8.0.0",
+    "http-server": "^0.11.1"
+  }
+}

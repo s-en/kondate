@@ -1,0 +1,82 @@
+html {
+  font-size: 16px;
+  background: #f1eeee;
+}
+body {
+  display: grid;
+  margin: 0;
+  min-height: 100vh;
+}
+body > * {
+  margin: 0px;
+  padding: 10px;
+  color: #111;
+}
+.wrapper {
+  margin : 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0px;
+
+  display: grid;
+  grid-template-rows: 48px 100px 1fr 100px;
+  grid-template-columns: 180px 1fr 180px;
+  grid-template-areas:
+        "title  title  title "
+        "nav    main   main  "
+        "nav    main   main  "
+        "footer footer footer";
+  font-family: -apple-system, BlinkMacSystemFont, "游ゴシック体", YuGothic, "Yu Gothic Medium", sans-serif;
+}
+header-layout {
+  grid-area: title;
+  border-bottom: 1.5px solid #ccc;
+}
+main {
+  grid-area: main;
+  padding: 0px 24px;
+}
+nav-layout {
+  grid-area: nav;
+}
+footer-layout {
+  grid-area: footer;
+  position: relative;
+  text-align: center;
+  border-top: 1.5px solid #ccc;
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    grid-template-areas:
+        "title  title  title "
+        "main   main   main  "
+        "main   main   main  "
+        "footer footer footer";
+  }
+  nav-layout {
+    display: none;
+  }
+}
+.menu_title {
+  margin-top: 10px;
+  padding: 4px 26px;
+  font-size: 1.2rem;
+}
+ul {
+  padding: 0px 0px 0px 48px;
+  margin: 6px 0;
+  position: relative;
+}
+ul li {
+  padding: 4px 0;
+  cursor: pointer;
+  list-style-type: none!important;
+}
+ul li:before {
+  position: absolute;
+  left : 26px;
+  color: #333;
+}
+ul li:hover:before {
+  content: '⚈';
+}

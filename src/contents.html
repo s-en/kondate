@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>nemusoft</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autorun=false"></script>
+  <script type="module" src="./components/content-list.js"></script>
+  <script type="module" src="./components/layout.js"></script>
+  <script type="module" src="./components/markdown-content.js"></script>
+  <link rel="stylesheet" href="./css/layout.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header-layout title="nemusoft"></header-layout>
+    <main>
+      <markdown-content></markdown-content>
+    </main>
+    <nav-layout></nav-layout>
+    <footer-layout></footer-layout>
+  </div>
+</body>
+</html>

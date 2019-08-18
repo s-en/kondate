@@ -1,0 +1,30 @@
+#side {
+  grid-area: side;
+}
+#ad {
+  grid-area: ad;
+}
+@media screen and (min-width: 992px) {
+  .wrapper {
+    grid-template-areas:
+      "title  title  title "
+      "nav    main   ad    "
+      "nav    main   side  "
+      "footer footer footer";
+  }
+}
+@media screen and (max-width: 991px) {
+  #side, #ad {
+    display: none;
+  }
+}
+content-list {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+}
+@media screen and (max-width: 600px) {
+  content-list {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
+  }
+}
